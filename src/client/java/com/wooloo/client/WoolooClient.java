@@ -64,7 +64,7 @@ public class WoolooClient implements ClientModInitializer {
 				for(Map.Entry<int[], String> entry : wingsCoords.entrySet()) {
 					int[] keyArray = entry.getKey();
 					String value = entry.getValue();
-					dist = distance(keyArray, new int[]{renderStatus[1], renderStatus[2], renderStatus[3]});
+					dist = distance(keyArray, new int[]{renderStatus[1], renderStatus[3]});
 					if(dist <= minDistance) {
 						minDistance = dist;
 						colorText = value;
